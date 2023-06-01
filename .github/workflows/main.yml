@@ -30,8 +30,5 @@ jobs:
           # Gather data
           npm run build
 
-          # Update version from tag
-          npm version ${{ github.ref_name }} || true
-
           # Publish new version to npm registry
           npm publish
